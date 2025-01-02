@@ -1,0 +1,18 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.firstStyle {
+  color: brown;
+  font-weight: bold;
+}
+
+.secondStyle {
+  color: chartreuse;
+  font-weight: bold;
+}

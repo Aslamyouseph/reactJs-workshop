@@ -3,6 +3,7 @@ import { useState } from "react";
 import counter from "./components/Counter";
 import Todo from "./components/todo/todo"; // importing the todo.js file
 import FolderStructure from "./components/folderStracture/folderStracture"; // importing the Folderstractuer file
+import ReusingTheStyle from "./components/reusingStyle/ReusingTheStyle";
 
 function App() {
   //
@@ -104,10 +105,29 @@ function App() {
   //
   //FIXME: From here onwards the FolderStructure example is  starting
 
+  // return (
+  //   // calling the FolderStructure function which is written inside the FolderStructure.js file
+  //   <div>
+  //     <FolderStructure />
+  //   </div>
+  // );
+  //
+  //
+  //
+  //TODO: From here onwards the ReusingTheStyle example will start
+
   return (
-    // calling the FolderStructure function which is written inside the FolderStructure.js file
+    // in the bellow table we passing the value during the calling time itself
+    // in the bellow we first call the first line and control will move to the ReusingTheStyle.js file and perform the operation based on the condition
+    // after we call the second line  and control will move to the ReusingTheStyle.js file and perform the operation based on the condition
     <div>
-      <FolderStructure />
+      <ReusingTheStyle name="ASLAM YOUSEPH" colour={true} />
+
+      <ReusingTheStyle name="YOUSEPH TM" colour={false} />
+
+      <ReusingTheStyle name="ASLAM YOUSEPH" colour={true} />
+
+      <ReusingTheStyle name="YOUSEPH TM" colour={false} />
     </div>
   );
 }
