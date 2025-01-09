@@ -8,6 +8,7 @@ import Page1 from "./if_else_example/page1";
 import Page2 from "./if_else_example/page2";
 import Page3 from "./if_else_example/page3";
 import { Routes, Route, Link, useNavigate } from "react-router-dom"; // This is used to enable routing in react example (http://localhost:3000/page1)
+import FrondendtoBackend from "./DataPassing/FrondendtoBackend";
 function App() {
   //
   //TODO: useState example in this the definition and calling in this file itself
@@ -164,11 +165,15 @@ function App() {
       <button onClick={() => navigate("/page1")}>Page1</button>
       <button onClick={() => navigate("/page2")}>Page2</button>
       <button onClick={() => navigate("/page3")}>Page3</button>
+      <button onClick={() => navigate("/frondendtobackend")}>
+        frondendtobackend
+      </button>
 
       <Routes>
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />
         <Route path="/page3" element={<Page3 />} />
+        <Route path="/frondendtobackend" element={<FrondendtoBackend />} />
       </Routes>
     </div>
   );
